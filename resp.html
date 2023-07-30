@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>making it responsive</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+    <style>
+        .nav {
+        position: sticky;
+        height: 50px;
+        border-color: white;
+        border-width: 1px;
+        border-style: solid;
+        background-color: rgba(238, 130, 238, 0.6);
+        top: 0;
+        z-index: 1;
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row wrap;
+
+        
+        
+      }
+      .nav div {
+        position: absolute;
+        color: white;
+      }
+
+      .home-div {
+        left: 39%;
+        top: 30%;
+      }
+      .about-div {
+        left: 45%;
+        top: 30%;
+      }
+      .course-div {
+        left: 50%;
+        top: 30%;
+      }
+      .pages-div {
+        left: 56%;
+        top: 30%;
+      }
+      .contact-div {
+        left: 61.5%;
+        top: 30%;
+      }
+      .search-icon {
+        right: 21%;
+        top: 30%;
+      }
+      .profile-icon {
+        right: 18%;
+        top: 30%;
+      }
+      .login {
+        right: 14%;
+        top: 30%;
+      }
+      .moon-icon {
+        right: 11.5%;
+        top: 30%;
+      }
+      .bottom-container{
+        background-color: antiquewhite;
+        height: 1000px;
+        width: 100%;
+      }
+      @media (max-width: 800px){
+        .nav{
+            flex-direction: column;
+        }
+      }
+    </style>
+
+</head>
+<body>
+    <div class="nav">
+        <div class="home-div">
+          <a href="mediaqueries.html" target="_blank">Home</a>
+        </div>
+        <div class="about-div">
+          <a href="mediaqueries.html" target="_blank">About</a>
+        </div>
+        <div class="course-div">
+          <a href="mediaqueries.html" target="_blank">Course</a>
+        </div>
+        <div class="pages-div">
+          <a href="mediaqueries.html" target="_blank">Pages</a>
+        </div>
+        <div class="contact-div">
+          <a href="mediaqueries.html" target="_blank">contact</a>
+        </div>
+        <div class="search-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="profile-icon"><i class="fa-solid fa-user"></i></div>
+        <div class="login">Login</div>
+        <div class="moon-icon"><i class="fa-regular fa-moon"></i></div>
+      </div>
+      <div  class="bottom-container">
+test
+      </div>
+     
+</body>
+</html>
