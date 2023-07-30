@@ -14,10 +14,10 @@
     <style>
       .top-container {
         position: relative;
-        background-color: bisque;
-        height: 560px;
+        background-color: red;
+        height: 550px;
         background-image: url(https://images.pexels.com/photos/5211438/pexels-photo-5211438.jpeg);
-        background-size: 100%;
+        background-size: cover;
         background-repeat: no-repeat;
       }
       .custom-shape-divider-bottom-1690471529 {
@@ -42,9 +42,13 @@
       }
 
       .nav {
-        position: relative;
-
+        position: sticky;
         height: 50px;
+        border-color: white;
+        border-width: 1px;
+        border-style: solid;
+        background-color: rgba(238, 130, 238, 0.6);
+        top: 0;
       }
       .nav div {
         position: absolute;
@@ -52,7 +56,7 @@
       }
 
       .home-div {
-        left: 40%;
+        left: 39%;
         top: 30%;
       }
       .about-div {
@@ -64,15 +68,15 @@
         top: 30%;
       }
       .pages-div {
-        left: 55%;
+        left: 56%;
         top: 30%;
       }
       .contact-div {
-        left: 60%;
+        left: 61.5%;
         top: 30%;
       }
       .search-icon {
-        right: 20%;
+        right: 21%;
         top: 30%;
       }
       .profile-icon {
@@ -80,78 +84,224 @@
         top: 30%;
       }
       .login {
-        right: 13%;
+        right: 14%;
         top: 30%;
       }
       .moon-icon {
-        right: 11%;
+        right: 11.5%;
         top: 30%;
       }
       .mid-section {
-        width: 500px;
+        width: 700px;
         position: absolute;
-        left: 25%;
+        left: 18%;
         top: 33%;
         color: white;
       }
+      .mid-section .title1 {
+        margin-left: 40px;
+        font-size: 50px;
+        margin-top: 10px;
+      }
+      .mid-section .title2 {
+        margin-left: 210px;
+        font-size: 50px;
+        margin-top: -60px;
+      }
+      .mid-section p {
+        margin-left: 130px;
+        margin-top: -40px;
+      }
+      .mid-section button {
+        margin-left: 220px;
+        background-color: pink;
+        height: 30px;
+        border-radius: 15px;
+        border-color: pink;
+      }
 
-      button {
-        margin-left: 100px;
-      }
-      h1 {
-        margin-left: 30px;
-      }
-      p {
-        margin-left: 45px;
-      }
       .bottom-container {
         height: 600px;
         width: 100%;
-        background-color: green;
         position: relative;
       }
       .column1 {
+        position: relative;
         width: 250px;
-        height: 400px;
-        background-color: orange;
+        height: 380px;
         position: absolute;
-        left: 5%;
+        left: 10%;
         top: 18%;
-        background-image: url();
+        background-image: url(https://img.freepik.com/free-photo/group-african-kids-paying-attention-class_23-2148892516.jpg);
         background-repeat: no-repeat;
-        
+        background-size: 100%;
       }
       .column2 {
+        position: relative;
         width: 250px;
-        height: 400px;
-        background-color: pink;
+        height: 380px;
+
         position: absolute;
-        left: 40%;
+        left: 37.5%;
         top: 18%;
         background-image: url(https://code.org/images/marketing/fit-318x212/mother-helping-her-daughter-use-a-laptop-4260325.jpg);
         background-repeat: no-repeat;
+        background-size: 100%;
       }
       .column3 {
+        position: relative;
         width: 250px;
-        height: 400px;
-        background-color: blue;
+        height: 380px;
+
         position: absolute;
-        left: 70%;
+        right: 10%;
         top: 18%;
-        background-image: url(image2.jpg);
+        background-image: url(image3.jpg);
         background-repeat: no-repeat;
-        
+        background-size: 100%;
+      }
+      .bottom-container .title1 {
+        margin-left: 435px;
+        font-size: 10px;
+        padding-top: 20px;
+      }
+      .bottom-container .title2 {
+        margin-left: 400px;
+        font-size: 20px;
+        margin-top: -10px;
+      }
+      .column1 .row1 {
+        position: absolute;
+        top: 50%;
+      }
+      .column1 .row2 {
+        position: absolute;
+
+        top: 56%;
+      }
+      .column1 .row3 {
+        position: absolute;
+
+        top: 85%;
+      }
+      .column2 .row1 {
+        position: absolute;
+        top: 50%;
+      }
+      .column2 .row2 {
+        position: absolute;
+
+        top: 56%;
+      }
+      .column2 .row3 {
+        position: absolute;
+
+        top: 85%;
+      }
+      .column3 .row1 {
+        position: absolute;
+        top: 50%;
+      }
+      .column3 .row2 {
+        position: absolute;
+
+        top: 56%;
+      }
+      .column3 .row3 {
+        position: absolute;
+
+        top: 85%;
+      }
+      .profile1 {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        margin-top: 5px;
+        margin-left: 15px;
+      }
+      .profile2 {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        margin-top: 5px;
+        margin-left: 15px;
+      }
+      .profile3 {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        margin-top: 5px;
+        margin-left: 15px;
+      }
+      .column1 button {
+        position: absolute;
+        background-color: rgb(128, 132, 230);
+        border-color: rgb(128, 132, 230);
+        margin-left: 10px;
+        color: white;
+        height: 25px;
+        width: 90px;
+        border-radius: 12px;
+        top: 3%;
+      }
+      .column2 button {
+        position: absolute;
+        background-color: rgb(128, 132, 230);
+        border-color: rgb(128, 132, 230);
+        margin-left: 10px;
+        color: white;
+        height: 25px;
+        width: 90px;
+        border-radius: 12px;
+        top: 3%;
+      }
+
+      .column1 .row3 p {
+        margin-left: 65px;
+        margin-top: -33px;
+      }
+      .column2 .row3 p {
+        margin-left: 65px;
+        margin-top: -33px;
+      }
+      .column3 .row3 p {
+        margin-left: 65px;
+        margin-top: -33px;
+      }
+      .footer {
+        position: absolute;
+      
+        height: 130px;
+        width: 100%;
+        top: 93%;
+      }
+      .footer .line1 {
+        margin-left: 35%;
+      }
+      .footer .line2 {
+        margin-left: 42%;
+        display: inline;
       }
     </style>
   </head>
-  <body>
+  <body style="position: relative">
     <div class="top-container">
       <div class="nav">
-        <div class="home-div">Home</div>
-        <div class="about-div">About</div>
-        <div class="course-div">Course</div>
-        <div class="pages-div">Pages</div>
-        <div class="contact-div">contact</div>
+        <div class="home-div">
+          <a href="mediaqueries.html" target="_blank">Home</a>
+        </div>
+        <div class="about-div">
+          <a href="mediaqueries.html" target="_blank">About</a>
+        </div>
+        <div class="course-div">
+          <a href="mediaqueries.html" target="_blank">Course</a>
+        </div>
+        <div class="pages-div">
+          <a href="mediaqueries.html" target="_blank">Pages</a>
+        </div>
+        <div class="contact-div">
+          <a href="mediaqueries.html" target="_blank">contact</a>
+        </div>
         <div class="search-icon">
           <i class="fa-solid fa-magnifying-glass"></i>
         </div>
@@ -160,8 +310,9 @@
         <div class="moon-icon"><i class="fa-regular fa-moon"></i></div>
       </div>
       <div class="mid-section">
-        <h1>50% Discount on all popular courses</h1>
-        <p>Take the first step to your journey to succes with us</p>
+        <p class="title1">50% Discount on all popular</p>
+        <p class="title2">courses</p>
+        <p>Take the first step to your journey to success with us</p>
         <button>Ready to get started?</button>
       </div>
       <div class="custom-shape-divider-bottom-1690471529">
@@ -179,10 +330,86 @@
       </div>
     </div>
     <div class="bottom-container">
-      bottom
-      <div class="column1">column1</div>
-      <div class="column2">column2</div>
-      <div class="column3">column3</div>
+      <p class="title1">JOIN OUR LEARN COURSES</p>
+      <p class="title2">Featured Online Courses</p>
+      <div class="column1">
+        <button>Beginner</button>
+        <div class="row1">
+          <p style="display: inline; margin-right: 65px; margin-left: 15px">
+            $35.00
+          </p>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <div class="row2">
+          <p style="margin-left: 17px">
+            Open Programming Course for everyone : Python
+          </p>
+          <i style="margin-left: 17px" class="fa-regular fa-clock"></i> 20 hrs
+          <i style="margin-left: 30px" class="fa-solid fa-user"></i> 50
+        </div>
+        <div class="row3">
+          <img class="profile1" src="profile-one.jpg" alt="profile" />
+          <p>by Olivia in Programming</p>
+        </div>
+      </div>
+      <div class="column2">
+        <button>Beginner</button>
+        <div class="row1">
+          <p style="display: inline; margin-right: 65px; margin-left: 15px">
+            $0.00
+          </p>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <div class="row2">
+          <p style="margin-left: 17px">
+            Learning to Write as a clean and Profesional Author
+          </p>
+          <i style="margin-left: 17px" class="fa-regular fa-clock"></i> 20 hrs
+          <i style="margin-left: 30px" class="fa-solid fa-user"></i> 50
+        </div>
+        <div class="row3">
+          <img class="profile2" src="profile-two.png" alt="prfile" />
+          <p>by Isabella in Teaching</p>
+        </div>
+      </div>
+      <div class="column3">
+        <div class="row1">
+          <p style="display: inline; margin-right: 65px; margin-left: 15px">
+            $49.00
+          </p>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <div class="row2">
+          <p style="margin-left: 17px">
+            Learn Master JQuery in a short Period of Time
+          </p>
+          <i style="margin-left: 17px" class="fa-regular fa-clock"></i> 20 hrs
+          <i style="margin-left: 30px" class="fa-solid fa-user"></i> 50
+        </div>
+        <div class="row3">
+          <img class="profile3" src="profile-three.jpg" alt="" />
+          <p>by William in Programming</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p class="line1">
+        Control your personal preference setting to get notified about
+      </p>
+      <p class="line2">appropriate courses View All Courses</p>
+      <i class="fa-solid fa-arrow-right"></i>
     </div>
   </body>
 </html>
